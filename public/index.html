@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- My stylesheet -->
-    <!-- <link  rel="stylesheet" type="text/css" href="/assets/css/main.css"> -->
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>CreaCine AC</title>
   </head>
-
   <body>
-    <nav-component></nav-component>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
 
-    <!-- AngularJS script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <div id="root"></div>
+    
     <!-- jQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script src="/app/app.js"></script>
-    <!-- Inyectamos cada controlador -->
-    <script src="/app/topNavComponent/navCtrl.js"></script>
+    <!-- AngularJS script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js" charset="utf-8"></script>
+    <!-- AngularJS routing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js" charset="utf-8"></script>
   </body>
 </html>
