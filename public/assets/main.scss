@@ -1,6 +1,28 @@
-.my-navbar {
-  background-color:black;
-  a, h1 {
-    color: white;
-  }
+$logo-margin: 1em;
+$logo-color: white;
+
+.page-flexbox-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.left-logo {
+    margin-right: $logo-margin;
+    color: $logo-color;
+}
+
+.middle-logo {
+  margin-left: $logo-margin;
+  margin-right: $logo-margin;
+  color: $logo-color;
+}
+
+.right-logo {
+  margin-left: $logo-margin;
+  color: $logo-color;
 }

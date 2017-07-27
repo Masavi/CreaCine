@@ -1,6 +1,22 @@
-.my-navbar {
-  background-color: black; }
-  .my-navbar a, .my-navbar h1 {
-    color: white; }
+.page-flexbox-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 1 auto; }
+
+.left-logo {
+  margin-right: 1em;
+  color: white; }
+
+.middle-logo {
+  margin-left: 1em;
+  margin-right: 1em;
+  color: white; }
+
+.right-logo {
+  margin-left: 1em;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

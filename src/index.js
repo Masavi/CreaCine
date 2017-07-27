@@ -2,12 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './components/Header';
+import Home from './containers/Home';
+import Footer from './components/Footer'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <div>
-    <Header />
+
+  <div className="page-flexbox-wrapper">
+    <header>
+      <Header />
+    </header>
+
+    <main>
+      <Home />
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
   </div>
+
   , document.getElementById('root'));
 registerServiceWorker();
 
