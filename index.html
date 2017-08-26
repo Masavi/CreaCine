@@ -3,14 +3,16 @@
 <head>
 	<title>{{3+5}}</title>
 	<meta charset="UTF-8">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <!-- Personal stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
 <body>
 
 	<header></header>
 
-	<body></body>
+	<body>
+		<navbar-component></navbar-component>
+	</body>
 
 	<footer></footer>
 
@@ -21,10 +23,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="/public/app.js"></script>
-
-    <!-- Inyectamos cada controlador 
-    <script src="/app/topNavComponent/navCtrl.js"></script>
-    -->
+    <!-- Controller injection -->
+    <script src="/public/navbarComponent/navbarCtrl.js"></script>
+    <!-- My javascript files -->
+    <script type="text/javascript" src="./app.js" ></script>
 
 </body>
 </html>

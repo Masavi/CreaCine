@@ -11,7 +11,10 @@
 
   function navbarCtrl() {
       var vm = this;
+
       //$('.carousel').carousel();
+
+
   }
 
 })();
